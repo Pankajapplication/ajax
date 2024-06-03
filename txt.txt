@@ -1,0 +1,60 @@
+<div id="step1">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <form action="#" id="studentForm" autocomplete="off">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3 class="text-white text-center mb-0 text-uppercase">Apply for Certificate</h3>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="input-group input-gap">
+                                <input type="text" class="form-control" id="stName" name="stName"
+                                    placeholder="Student Name">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="input-group input-gap">
+                                <input type="text" class="form-control" id="stEmail" name="stEmail"
+                                    placeholder="Student Email">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <select class="form-select input-gap" aria-label="Default select example" id="stCourse">
+                                <option selected disabled>Course Duration</option>
+                                <option value="1">1 Month</option>
+                                <option value="3">3 Months</option>
+                                <option value="2">6 Months</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="input-group input-gap">
+                                <input type="text" class="form-control" id="stMobile" name="stMobile"
+                                    placeholder="Student Mobile">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="input-group input-gap">
+                                <button type="Submit" href="#" id="submitBtn"
+                                    class="btn btn-primary w-100">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<div id="step2" style="display: none;">
+    <h3>Step 2: Contact Information</h3>
+    <input type="email" placeholder="Email">
+    <br><br>
+    <button onclick="prevStep()">Previous</button>
+    <button onclick="nextStep()">Next</button>
+</div>
+
+<div id="step3" style="display: none;">
+    <h3>Step 3: Additional Information</h3>
+    <textarea placeholder="Comments"></textarea>
+    <br><br>
+    <button onclick="prevStep()">Previous</button>
+    <button onclick="submitForm()">Submit</button>
+</div>

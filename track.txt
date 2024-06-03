@@ -1,0 +1,70 @@
+<div id="step1">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <form action="#" id="studentForm" autocomplete="off">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3 class="text-white text-center mb-0 text-uppercase">Apply for Certificate</h3>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="input-group input-gap">
+                                <input type="text" class="form-control" id="stID" name="stID"
+                                    placeholder="Enter Student ID" required>
+                                    <span class="error"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-group input-gap">
+                                <button onclick="location.reload()" type="button" href="#"
+                                    class="btn btn-primary w-100">Back</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-group input-gap">
+                                <button onclick="nextStep()" type="button" href="#" id="submitBtn"
+                                    class="btn btn-primary w-100">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<div id="step2" style="display: none;">
+    <div class="row">
+        <div class="col-lg-6 mx-auto">
+            <form action="#" id="studentForm" autocomplete="off">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="text-white text-center mb-0 text-uppercase">Apply for Certificate</h3>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="input-group input-gap">
+                                <button class="btn btn-primary mx-auto" type="button">View Download</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>        
+</div>
+
+<div id="step3" style="display: none;">
+    <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <form action="#" id="studentForm" autocomplete="off">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3 class="text-white text-center mb-0 text-uppercase">Apply for Certificate</h3>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="input-group input-gap">
+                                <button onclick="nextStep()" type="button" href="#" id="submitBtn"
+                                    class="btn btn-primary w-100">Veiw Certificate</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+</div>

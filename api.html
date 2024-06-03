@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Include Axios library -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <script>
+        async function sendSMS() {
+            const options = {
+                method: 'POST',
+                url: 'https://shoutout-otp1.p.rapidapi.com/send',
+                headers: {
+                    'content-type': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Apikey {eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiZGU3NDkyMC0wNDc5LTExZWYtOGNlYi1kNzU5NDMzMjA5NGUiLCJzdWIiOiJTSE9VVE9VVF9BUElfVVNFUiIsImlhdCI6MTcxNDIxMDYzOSwiZXhwIjoyMDI5NzQzNDM5LCJzY29wZXMiOnsiYWN0aXZpdGllcyI6WyJyZWFkIiwid3JpdGUiXSwibWVzc2FnZXMiOlsicmVhZCIsIndyaXRlIl0sImNvbnRhY3RzIjpbInJlYWQiLCJ3cml0ZSJdfSwic29fdXNlcl9pZCI6IjU3NTAxNyIsInNvX3VzZXJfcm9sZSI6InVzZXIiLCJzb19wcm9maWxlIjoiYWxsIiwic29fdXNlcl9uYW1lIjoiIiwic29fYXBpa2V5Ijoibm9uZSJ9.zTtgvahYAqGOJguuUb_MZvHRYZbzjnj-9HfVInA4oYs}',
+                    'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
+                    'X-RapidAPI-Host': 'shoutout-otp1.p.rapidapi.com'
+                },
+                data: {
+                    content: {
+                        sms: 'Dear Student Your Verfication OTP is {{code}}'
+                    },
+                    destination: '',
+                    source: 'ShoutDEMO',
+                    transport: 'sms'
+                }
+            };
+
+            try {
+                const response = await axios.request(options);
+                console.log(response.data);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        sendSMS(); // Call the function to send the SMS
+    </script>
+</body>
+</html>

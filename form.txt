@@ -1,0 +1,138 @@
+<div id="step1">
+    <div class="row">
+        <div class="col-lg-6 mx-auto">
+            <form action="#" id="studentForm" autocomplete="off" class="applyCertificate">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="text-white text-center mb-0 text-uppercase">Apply for Certificate</h3>
+                    </div>
+                    <div class="col-lg-12 mx-auto">
+                        <form action="#" id="studentForm2" autocomplete="off">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="input-group input-gap">
+                                        <i class="fa-regular fa-user"></i>
+                                        <input type="text" class="form-control" id="stFName" name="stFName"
+                                            placeholder="First Name">
+                                        <span class="error"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group input-gap">
+                                        <i class="fa-regular fa-user"></i>
+                                        <input type="text" class="form-control" id="stLName" name="stLName"
+                                            placeholder="Last Name">
+                                        <span class="error"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group input-gap">
+                                        <i class="fa-solid fa-book"></i>
+                                        <input type="text" class="form-control" id="courseName" name="courseName"
+                                            placeholder="Course Name" required>
+                                        <span class="error"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group input-gap">
+                                        <i class="fa-regular fa-address-card"></i>
+                                        <input type="text" class="form-control" id="stID" name="stID"
+                                            placeholder="Registration ID" required>
+                                        <span class="error"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group input-gap">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <input type="text" class="form-control" id="stEmail" name="stEmail"
+                                            placeholder="Registered email">
+                                        <span class="error"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group input-gap">
+                                        <i class="fa-solid fa-mobile-screen"></i>
+                                        <input type="text" class="form-control" id="stMobile" name="stMobile"
+                                            placeholder="Registered number">
+                                        <span class="error"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group input-gap">
+                                        <label for="stSDate">
+                                            <i class="fa-regular fa-calendar-days"></i>
+                                        </label>
+                                        <input type="text" class="form-control" id="stSDate" name="stSDate" name="daterange"
+                                            placeholder="Course Start Date">
+                                        <span class="error"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group input-gap">
+                                        <label for="stEDate">
+                                            <i class="fa-regular fa-calendar-days"></i>
+                                        </label>
+                                        <input type="text" class="form-control" id="stEDate" name="stEDate"
+                                            placeholder="Course End Date">
+                                        <span class="error"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group input-gap">
+                                        <button onclick="rtd()" type="button" href="#" id="submitBtn"
+                                            class="btn btn-primary w-100">Back</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group input-gap">
+                                        <button onclick="nextStep()" type="button" href="#" id="submitBtn"
+                                            class="btn btn-primary w-100">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="step2" style="display: none;">
+    <div class="row">
+        <div class="col-lg-6 mx-auto">
+            <form action="#" id="studentForm" autocomplete="off">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="text-white text-center mb-0 text-uppercase">Apply for Certificate</h3>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="input-group input-gap">
+                            <input type="text" class="form-control" id="stOTP" name="stOTP" placeholder="Enter OTP">
+                            <span class="error"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="input-group input-gap">
+                            <button onclick="prevStep()" type="button" href="#"
+                                class="btn btn-primary w-100">Prev</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="input-group input-gap">
+                            <button type="submit" href="#" id="submitBtn"
+                                class="btn btn-primary w-100">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="step3" style="display: none;">
+    <div class="row">
+        <div class="col-lg-6 mx-auto">
+            <h1>Thankyou <span id="fstName"></span></h1>
+        </div>
+    </div>
+</div>
